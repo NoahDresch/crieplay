@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Noah Dresch">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/variables.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/base.css">
+    <link rel="stylesheet" href="CSS/componentes/header.css">
+    <link rel="stylesheet" href="CSS/componentes/banner.css">
+    <link rel="stylesheet" href="CSS/componentes/carrosel.css">
+    <link rel="stylesheet" href="CSS/componentes/footer.css">
+    <script src="https://kit.fontawesome.com/e574af6ddc.js" crossorigin="anonymous"></script>
+    <title>Crieplay</title>
+</head>
+<body>
+    <header class="headerContainer">
+        <img class="headerlogo" src="/imagens/logo.png" alt="logo crieplay">
+        <nav class="headerMenu">
+            <a href="#" class="headerNavItem headerNavItem--active"> <!--a segunda classe se sobresai a primeira-->
+                <i class="fa-solid fa-house"></i>
+                <spam>Inicio</spam>
+            </a>
+            <a href="#" class="headerNavItem">
+                <i class="fa-solid fa-film"></i>
+                <spam>Filmes</spam>
+            </a>
+            <a href="#" class="headerNavItem">
+                <i class="fa-solid fa-clapperboard"></i>
+                <spam>Séries</spam>
+            </a>
+            <a href="#" class="headerNavItem">
+                <i class="fa-solid fa-tv"></i>
+                <spam>Ao Vivo</spam>
+            </a>
+        </nav>
+        <a class="buttom" href="#">Entrar</a>
+    </header>
+    <div class="banner">
+        <div class="bannerContainer">
+            <h1 class="bannerTitle">
+                Filmes, Séries e muito mais.<br>
+                Sem limites.
+            </h1>
+            <h5 class="bannerSubtitle">
+                Assista onde quiser. Cancele quando quiser.
+            </h5>
+            <form class="inputGroup">
+                <input class="input" id="email" name="email" placeholder="insira seu e-mail">
+                <button class="buttom buttomXL">Assinar</button>
+            </form>
+        </div>
+    </div>
+    <section>
+        <div class="carrosel">
+            <div class="carroselHeaderContainer">
+                <div>
+                    <spam class="carroselHeaderTitle">Populares</spam>
+                </div>
+                <div class="carroselSeeAll">
+                    <a href="#">Ver todos</a>
+                    <i class="fa-solid fa-arrow-right icon"></i>
+                </div>
+            </div>
+            <div class="carroselTracker">
+                <div class="cover">
+                    <img class="coverImage" src="imagens/novidades/campeao.jpg" alt="">
+                </div>
+                <div class="cover">
+                    <img class="coverImage" src="imagens/novidades/casamento.jpg" alt="">
+                </div>
+                <div class="cover">
+                    <img class="coverImage" src="imagens/novidades/desaparecidos.jpg" alt="">
+                </div>
+                <div class="cover">
+                    <img class="coverImage" src="imagens/novidades/noite-jogos.jpg" alt="">
+                </div>
+                <div class="cover">
+                    <img class="coverImage" src="imagens/novidades/nova-mulher.jpg" alt="">
+                </div>
+                <div class="cover">
+                    <img class="coverImage" src="imagens/novidades/pedaco.jpg" alt="">
+                </div>
+                <div class="cover">
+                    <img class="coverImage" src="imagens/novidades/preco-noiva.jpg" alt="">
+                </div>
+                <div class="cover">
+                    <img class="coverImage" src="imagens/novidades/tira.jpg" alt="">
+                </div>
+                <div class="cover">
+                    <img class="coverImage" src="imagens/novidades/tudo-em-familia.jpg" alt="">
+                </div>
+                <div class="cover">
+                    <img class="coverImage" src="imagens/novidades/vikings.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="carrosel">
+            <div class="carroselHeaderContainer">
+                <div>
+                    <spam class="carroselHeaderTitle">Filmes</spam>
+                </div>
+                <div class="carroselSeeAll">
+                    <a href="#">Ver todos</a>
+                    <i class="fa-solid fa-arrow-right icon"></i>
+                </div>
+            </div>
+            <div class="carroselTracker">
+                <div class="cover coverImage2">
+                    <span class="coverTitle">Os Caça Fantasmas</span>
+                    <img class="coverImage" src="imagens/filmes/caca-fantasmas.jpg" alt="">
+                </div>
+                <div class="cover coverImage2">
+                    <span class="coverTitle">Eu sou Celine Dion</span>
+                    <img class="coverImage" src="imagens/filmes/celine.jpg" alt="">
+                </div>
+                <div class="cover coverImage2">
+                    <span class="coverTitle">Mamonas Assassinas</span>
+                    <img class="coverImage" src="imagens/filmes/mamonas.jpg" alt="">
+                </div>
+                <div class="cover coverImage2">
+                    <span class="coverTitle">Transformers</span>
+                    <img class="coverImage" src="imagens/filmes/transformers.jpg" alt="">
+                </div>
+                <div class="cover coverImage2">
+                    <span class="coverTitle">Os Três Mosqueteiros</span>
+                    <img class="coverImage" src="imagens/filmes/tres-mosqueteiros.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="carrosel">
+            <div class="carroselHeaderContainer">
+                <div>
+                    <spam class="carroselHeaderTitle">Animes</spam>
+                </div>
+                <div class="carroselSeeAll">
+                    <a href="#">Ver todos</a>
+                    <i class="fa-solid fa-arrow-right icon"></i>
+                </div>
+            </div>
+            <div class="carroselTracker">
+                <div class="cover coverImage2">
+                    <span class="coverTitle">Banana Fishman</span>
+                    <img class="coverImage" src="imagens/animes/banana-fishman.jpg" alt="">
+                </div>
+                <div class="cover coverImage2">
+                    <span class="coverTitle">Os Cavaleiros do Zodíaco</span>
+                    <img class="coverImage" src="imagens/animes/cdz.jpg" alt="">
+                </div>
+                <div class="cover coverImage2">
+                    <span class="coverTitle">Dororo</span>
+                    <img class="coverImage" src="imagens/animes/dororo.jpg" alt="">
+                </div>
+                <div class="cover coverImage2">
+                    <span class="coverTitle">Inu Yasha</span>
+                    <img class="coverImage" src="imagens/animes/inuyasha.png" alt="">
+                </div>
+                <div class="cover coverImage2">
+                    <span class="coverTitle">One Piece</span>
+                    <img class="coverImage" src="imagens/animes/onepiece.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div>
+            <img class="headerlogo" src="/imagens/logo.png" alt="logo crieplay">
+        </div>
+        <nav class="footerNav">
+            <a href="#">Feedback</a>
+            <a href="#">Ajuda</a>
+            <a href="#">FAQ</a>
+        </nav>
+        <spam class="footerCopy">
+            &copy; 2024 Todos direitos reservados
+        </spam>
+    </footer>
+</body>
+</html>

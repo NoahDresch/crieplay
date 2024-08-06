@@ -1,0 +1,81 @@
+.headerContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    margin: 40px 70px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.headerlogo {
+    width: 170px;
+    margin-right: 64px;
+}
+
+.headerMenu {
+    display: inline-block;
+}
+
+.headerNavItem {
+    color: var(--color-lighten-gray);
+    text-decoration: none;
+    margin-right: 24px;
+}
+
+/*usado para tirar a margem do ultimo item (pseudo-classe)*/
+.headerNavItem:last-child {
+    margin-right: 0px;
+}
+
+.headerNavItem--active {
+    color: var(--color-white);
+}
+
+.buttom {
+    background-color: var(--color-red);
+    padding: 10px 32px;
+    border-radius: var(--border-radius-default);
+    color: var(--color-white);
+    text-decoration: none;
+    border: none;
+    margin-left: auto; /*auto = vai jogar toda a margem disponivel*/
+    margin-right: 0;/*vai ficar zero a margem*/
+    line-height: 22px;
+}
+
+.buttomXL {
+    padding: 19px 32px;
+    margin-left: 0;
+}
+
+@media only screen and (max-width: 480px) {
+    .headerContainer {
+        margin: 16px;
+        flex-wrap: wrap;
+    }
+
+    .headerlogo {
+        width: 140px;
+        margin-right: 0px;
+    }
+
+    .headerMenu {
+        order: 3;
+        margin-left: -16px;
+        margin-top: 40px;
+        margin-right: -16px;
+        margin-bottom: 0px;
+        padding: 0 16px;
+        display: flex;
+        overflow: auto hidden;
+        scrollbar-width: none;
+    }
+
+    .headerNavItem {
+        flex-shrink: 0;
+    }
+}

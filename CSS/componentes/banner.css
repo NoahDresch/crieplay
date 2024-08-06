@@ -1,0 +1,77 @@
+.banner {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 35%) 50%, rgba(0, 0, 0, 0.9) 100%), url('../../imagens/background.jpg');
+    height: 720px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bannerTitle {
+    font-size: 65px;
+    line-height: 72px;
+    letter-spacing: -1.5px;
+    color: var(--color-white);
+    margin-bottom: 20px;
+}
+
+.bannerSubtitle {
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--color-white);
+    margin-bottom: 40px;
+}
+
+.bannerContainer {
+    margin-left: 72px;
+}
+
+.input {
+    height: 28px;
+    width: 360px;
+    border-radius: var(--border-radius-default);
+    border: none;
+    padding: 16px 24px;
+    font-size: var(--font-size-default);
+    line-height: 22px;
+}
+
+.inputGroup {
+    display: flex;
+}
+
+.inputGroup .input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.inputGroup .buttomXL {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+@media only screen and (max-width: 480px) {
+    .banner {
+        height: 510px;
+    }
+
+    .bannerContainer {
+        margin-left: 16px;
+        padding-top: 80px;
+    }
+
+    .bannerTitle {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .bannerSubtitle {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .input {
+        width: 220px;
+        height: 26px;
+        font-size: 14px;
+    }
+}
